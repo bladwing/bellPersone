@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import Menu from "./Components/Menu";
+import "./App.css";
+import Slider from "./Components/Slider";
+import Companies from "./Components/Companies";
+import About from "./Components/About";
+import WhyUs from "./Components/WhyUs";
+import Services from "./Components/Services";
+import Portfolio from "./Components/Portfolio";
+import Team from "./Components/Team";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Menu />
+      <Slider />
+
+      <main id="main">
+      <Companies />
+      <About/>
+      <WhyUs/>
+      <Services/>
+      <Portfolio/>
+      <Team/>
+      <Contact/>
+    
+      </main>
+
+      <Footer/>
+
+      {/* <div id="preloader"></div> */}
+  <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+    </>
   );
 }
 
