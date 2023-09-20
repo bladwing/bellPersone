@@ -1,38 +1,68 @@
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Menu from "./Components/Menu";
-import "./App.css";
 import Slider from "./Components/Slider";
 import Companies from "./Components/Companies";
 import About from "./Components/About";
 import WhyUs from "./Components/WhyUs";
 import Services from "./Components/Services";
-import Portfolio from "./Components/Portfolio";
+import Portfolio from "./Components/Portfolio/Portfolio";
 import Team from "./Components/Team";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
+import PortfolioDetails from "./Components/Portfolio/PortfolioDetails";
+
+import "./App.css";
+
+
 function App() {
+
   return (
     <>
       <Menu />
-      <Slider />
+      <BrowserRouter>
 
-      <main id="main">
-      <Companies />
-      <About/>
-      <WhyUs/>
-      <Services/>
-      <Portfolio/>
-      <Team/>
-      <Contact/>
-    
-      </main>
+        <Routes>
+          <Route path="/" element={<TempPage />} />
+          <Route path="/portfolio" element={<PortfolioDetails />} />
+          <Route path="/*" element={<NotFound />} />
+        </Routes>
 
-      <Footer/>
-
-      {/* <div id="preloader"></div> */}
-  <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+      </BrowserRouter>
+      <Footer />
     </>
   );
 }
 
 export default App;
+
+
+const TempPage = () => {
+  return (
+    <>
+      <Slider />
+      <main id="main">
+        <Companies />
+        <About />
+        <WhyUs />
+        <Services />
+        <Portfolio />
+        <Team />
+        <Contact />
+      </main>
+    </>
+  )
+}
+
+const NotFound = () => {
+  return (
+    <>
+      <h1>
+        Page Not Found 404
+      </h1>
+
+    </>
+  )
+}

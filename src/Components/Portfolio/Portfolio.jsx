@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Portfolio() {
   return (
@@ -53,7 +54,7 @@ export default function Portfolio() {
                 <i className="bx bx-plus"></i>
               </a>
               <a
-                href="portfolio-details.html"
+                href="/portfolio"
                 className="details-link"
                 title="More Details"
               >
@@ -61,6 +62,7 @@ export default function Portfolio() {
               </a>
             </div>
           </div>
+          
 
           <div className="col-lg-4 col-md-6 portfolio-item filter-web">
             <div className="portfolio-img">
@@ -82,7 +84,7 @@ export default function Portfolio() {
                 <i className="bx bx-plus"></i>
               </a>
               <a
-                href="portfolio-details.html"
+                href="/portfolio"
                 className="details-link"
                 title="More Details"
               >
@@ -111,7 +113,7 @@ export default function Portfolio() {
                 <i className="bx bx-plus"></i>
               </a>
               <a
-                href="portfolio-details.html"
+                href="/portfolio"
                 className="details-link"
                 title="More Details"
               >
@@ -140,7 +142,7 @@ export default function Portfolio() {
                 <i className="bx bx-plus"></i>
               </a>
               <a
-                href="portfolio-details.html"
+                href="/portfolio"
                 className="details-link"
                 title="More Details"
               >
@@ -169,7 +171,7 @@ export default function Portfolio() {
                 <i className="bx bx-plus"></i>
               </a>
               <a
-                href="portfolio-details.html"
+                href="/portfolio"
                 className="details-link"
                 title="More Details"
               >
@@ -198,7 +200,7 @@ export default function Portfolio() {
                 <i className="bx bx-plus"></i>
               </a>
               <a
-                href="portfolio-details.html"
+                href="/portfolio"
                 className="details-link"
                 title="More Details"
               >
@@ -227,7 +229,7 @@ export default function Portfolio() {
                 <i className="bx bx-plus"></i>
               </a>
               <a
-                href="portfolio-details.html"
+                href="/portfolio"
                 className="details-link"
                 title="More Details"
               >
@@ -256,7 +258,7 @@ export default function Portfolio() {
                 <i className="bx bx-plus"></i>
               </a>
               <a
-                href="portfolio-details.html"
+                href="/portfolio"
                 className="details-link"
                 title="More Details"
               >
@@ -285,7 +287,7 @@ export default function Portfolio() {
                 <i className="bx bx-plus"></i>
               </a>
               <a
-                href="portfolio-details.html"
+                href="/portfolio"
                 className="details-link"
                 title="More Details"
               >
